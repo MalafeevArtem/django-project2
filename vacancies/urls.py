@@ -6,7 +6,7 @@ from vacancies.views import CompanyView, MainView, SpecialtyView, VacanciesView,
 urlpatterns = [
     path('', MainView.as_view()),
     path('vacancies/', VacanciesView.as_view()),
-    path('vacancies/cat/<str:specialization>/', SpecialtyView.as_view()),  # fff
+    path('vacancies/cat/<str:specialization>/', SpecialtyView.as_view()),
     path('companies/<int:id>/', CompanyView.as_view()),
     path('vacancies/<int:id>/', VacancyView.as_view()),
 ]
